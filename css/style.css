@@ -1,0 +1,31 @@
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: #ffffff;
+    color: #1a1b23;
+    -webkit-font-smoothing: antialiased;
+}
+.text-gradient {
+    background: linear-gradient(to right, #0061ff, #0047ba);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn-dropbox {
+    background-color: #0061ff;
+    color: white;
+    padding: 16px 32px;
+    transition: background-color 0.2s ease;
+}
+.btn-dropbox:hover {
+    background-color: #0055e0;
+}
+.btn-outline-dropbox {
+    border: 1px solid #1a1b23;
+    padding: 16px 32px;
+    transition: background-color 0.2s ease;
+}
+.btn-outline-dropbox:hover {
+    background-color: #f7f9fa;
+}

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Odrixon Studio | Ý tưởng của bạn, tâm huyết của chúng tôi</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="apple-touch-icon" href="img/logo.png">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&amp;family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=JetBrains+Mono:wght@500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#f0f0fb",
+                        "on-primary-container": "#cad3ff",
+                        "on-secondary-fixed-variant": "#005137",
+                        "on-surface-variant": "#434655",
+                        "on-surface": "#1a1b23",
+                        "secondary-fixed": "#85f8c4",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#a73400",
+                        "surface-container": "#f7f9fa",
+                        "inverse-primary": "#b7c4ff",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#82f5c1",
+                        "surface-variant": "#e2e1ed",
+                        "inverse-surface": "#2e3039",
+                        "surface-container-high": "#e8e7f3",
+                        "outline-variant": "#c4c5d7",
+                        "primary-container": "#0061ff",
+                        "secondary-fixed-dim": "#68dba9",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#ffdbcf",
+                        "background": "#ffffff",
+                        "surface-bright": "#ffffff",
+                        "studio-info": "#0061ff",
+                        "primary-fixed-dim": "#b7c4ff",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-container": "#ffc9b7",
+                        "surface": "#ffffff",
+                        "on-tertiary-fixed": "#390c00",
+                        "on-secondary-fixed": "#002114",
+                        "on-tertiary-fixed-variant": "#832700",
+                        "secondary": "#006c4a",
+                        "on-background": "#1a1b23",
+                        "on-secondary-container": "#00714e",
+                        "studio-alert": "#D97706",
+                        "on-primary": "#ffffff",
+                        "primary": "#0061ff",
+                        "surface-container-highest": "#e2e1ed",
+                        "surface-dim": "#d9d9e5",
+                        "on-primary-fixed-variant": "#0039b5",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#ffb59c",
+                        "surface-tint": "#0061ff",
+                        "error": "#ba1a1a",
+                        "outline": "#747686",
+                        "studio-dark": "#0F172A",
+                        "studio-error": "#EF4444",
+                        "surface-container-low": "#fcfcfc",
+                        "primary-fixed": "#dce1ff",
+                        "tertiary": "#7f2500",
+                        "on-primary-fixed": "#001551"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "container-max": "1160px",
+                        "unit": "4px",
+                        "margin-mobile": "24px",
+                        "margin-desktop": "60px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-xl": ["Plus Jakarta Sans", "sans-serif"],
+                        "label-sm": ["Be Vietnam Pro", "sans-serif"],
+                        "label-code": ["JetBrains Mono", "monospace"],
+                        "body-md": ["Be Vietnam Pro", "sans-serif"],
+                        "body-lg": ["Be Vietnam Pro", "sans-serif"],
+                        "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
+                        "title-md": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "headline-xl": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "label-code": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["20px", { "lineHeight": "30px", "fontWeight": "400" }],
+                        "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "600" }],
+                        "title-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="overflow-x-hidden bg-white dark:bg-black text-on-surface dark:text-white transition-colors duration-300">
+    <!-- TopNavBar -->
+    <nav
+        class="fixed w-full top-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur-md border-b border-black/5 dark:border-white/5 transition-colors duration-300">
+        <div class="flex justify-between items-center h-14 md:h-16 px-gutter max-w-container-max mx-auto">
+            <a href="#" class="flex items-center gap-3">
+                <img alt="Odrixon Studio Logo" class="h-7 w-7 md:h-8 md:w-8 object-contain dark:invert"
+                    src="img/logo.png">
+                <span class="text-base md:text-lg font-bold text-black dark:text-white tracking-tight">Odrixon
+                    Studio</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="font-label-sm text-xs md:text-label-sm text-on-surface dark:text-white/70 hover:text-primary dark:hover:text-primary-container transition-colors"
+                    href="#vision" data-i18n="nav-vision">Tầm nhìn</a>
+                <a class="font-label-sm text-xs md:text-label-sm text-on-surface dark:text-white/70 hover:text-primary dark:hover:text-primary-container transition-colors"
+                    href="#approach" data-i18n="nav-approach">Hướng đi</a>
+                <a class="font-label-sm text-xs md:text-label-sm text-on-surface dark:text-white/70 hover:text-primary dark:hover:text-primary-container transition-colors"
+                    href="#contact" data-i18n="nav-contact">Hợp tác</a>
+            </div>
+            <div class="flex items-center gap-3">
+                <!-- Language Toggle -->
+                <button id="lang-toggle"
+                    class="p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-full transition-all flex items-center gap-1.5 group">
+                    <iconify-icon icon="material-symbols:language" class="text-lg"></iconify-icon>
+                    <span class="font-label-sm text-[10px] md:text-xs uppercase" id="lang-text">VN</span>
+                </button>
+                <!-- Theme Toggle -->
+                <button id="theme-toggle"
+                    class="p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-full transition-all">
+                    <iconify-icon id="theme-icon" icon="material-symbols:dark-mode-outline"
+                        class="text-lg"></iconify-icon>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <section
+        class="relative pt-32 pb-20 md:pt-64 md:pb-48 px-6 md:px-gutter transition-all duration-1000 opacity-100 translate-y-0">
+        <div class="max-w-container-max mx-auto">
+            <div class="max-w-4xl">
+                <h1 class="font-headline-xl text-[36px] md:text-headline-xl mb-6 md:mb-10 leading-[1.2] md:leading-[1.05] text-black dark:text-white"
+                    data-i18n="hero-title">
+                    Odrixon Studio — <span class="text-gradient">Ý tưởng</span> của bạn, <span class="text-gradient">tâm
+                        huyết</span> của chúng tôi.
+                </h1>
+                <p class="font-body-lg text-base md:text-body-lg text-on-surface-variant dark:text-white/60 max-w-2xl mb-8 md:mb-12 leading-relaxed"
+                    data-i18n="hero-description">
+                    Chúng tôi đang trong giai đoạn khởi tạo những giá trị mới. Odrixon Studio tìm kiếm những đối tác
+                    đồng hành sớm để cùng hiện thực hóa những giải pháp phần mềm mang tính đột phá.
+                </p>
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                    <a class="w-full md:w-auto btn-dropbox font-label-sm text-center" href="#contact"
+                        data-i18n="hero-cta-primary">
+                        Trở thành đối tác sớm
+                    </a>
+                    <a class="w-full md:w-auto btn-outline-dropbox dark:border-white/20 dark:text-white dark:hover:bg-white/5 font-label-sm text-center"
+                        href="#vision" data-i18n="hero-cta-secondary">
+                        Tìm hiểu tầm nhìn của chúng tôi
+                    </a>
+                </div>
+            </div>
+            <!-- Vision Stats Bar -->
+            <div
+                class="mt-16 md:mt-32 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 border-t border-black/10 dark:border-white/10 pt-8 md:pt-16">
+                <div>
+                    <p class="font-headline-lg text-xl md:text-headline-lg text-black dark:text-white mb-2 md:mb-4"
+                        data-i18n="stat1-title">Tầm nhìn</p>
+                    <p class="font-body-md text-on-surface-variant dark:text-white/60" data-i18n="stat1-desc">Xây dựng
+                        hệ sinh thái công nghệ nơi sự sáng tạo không giới hạn gặp gỡ kỹ thuật chính xác.</p>
+                </div>
+                <div>
+                    <p class="font-headline-lg text-xl md:text-headline-lg text-black dark:text-white mb-2 md:mb-4"
+                        data-i18n="stat2-title">Chất lượng</p>
+                    <p class="font-body-md text-on-surface-variant dark:text-white/60" data-i18n="stat2-desc">Cam kết
+                        tiêu chuẩn khắt khe nhất trong từng dòng code và trải nghiệm người dùng ngay từ ngày đầu.</p>
+                </div>
+                <div>
+                    <p class="font-headline-lg text-xl md:text-headline-lg text-black dark:text-white mb-2 md:mb-4"
+                        data-i18n="stat3-title">Sáng tạo</p>
+                    <p class="font-body-md text-on-surface-variant dark:text-white/60" data-i18n="stat3-desc">Tiếp cận
+                        những thách thức cũ bằng tư duy mới, ưu tiên tính đột phá và hiệu quả bền vững.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Approach Section -->
+    <section
+        class="py-16 md:py-32 px-6 md:px-gutter bg-surface-container dark:bg-white/5 transition-all duration-1000 opacity-100 translate-y-0"
+        id="approach">
+        <div class="max-w-container-max mx-auto">
+            <div class="mb-12 md:mb-20">
+                <h2 class="font-headline-lg text-3xl md:text-headline-lg text-black dark:text-white mb-4 md:mb-6"
+                    data-i18n="approach-title">Định hướng cốt lõi</h2>
+                <p class="font-body-lg text-base md:text-body-lg text-on-surface-variant dark:text-white/60 max-w-2xl"
+                    data-i18n="approach-subtitle">Dù mới bắt đầu, chúng tôi đã xác định rõ những trụ cột sẽ dẫn dắt mọi
+                    dự án tại Odrixon.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-0 border border-black/10 dark:border-white/10">
+                <!-- Pillar 1 -->
+                <div
+                    class="p-6 md:p-12 bg-white dark:bg-black border-r border-black/10 dark:border-white/10 last:border-r-0">
+                    <div class="w-12 h-12 mb-6 md:mb-8">
+                        <iconify-icon icon="material-symbols:lightbulb-outline"
+                            class="text-primary text-4xl"></iconify-icon>
+                    </div>
+                    <h3 class="font-title-md text-xl md:text-title-md text-black dark:text-white mb-4 md:mb-6"
+                        data-i18n="pillar1-title">Kỹ thuật tinh
+                        gọn</h3>
+                    <p class="font-body-md text-on-surface-variant dark:text-white/60 leading-relaxed"
+                        data-i18n="pillar1-desc">
+                        Tập trung vào những tính năng cốt lõi mang lại giá trị thực, loại bỏ sự rườm rà để đảm bảo hiệu
+                        năng tối ưu nhất.
+                    </p>
+                </div>
+                <!-- Pillar 2 -->
+                <div
+                    class="p-6 md:p-12 bg-white dark:bg-black border-r border-black/10 dark:border-white/10 last:border-r-0">
+                    <div class="w-12 h-12 mb-6 md:mb-8">
+                        <iconify-icon icon="material-symbols:hub-outline" class="text-primary text-4xl"></iconify-icon>
+                    </div>
+                    <h3 class="font-title-md text-xl md:text-title-md text-black dark:text-white mb-4 md:mb-6"
+                        data-i18n="pillar2-title">Kết nối cộng
+                        hưởng</h3>
+                    <p class="font-body-md text-on-surface-variant dark:text-white/60 leading-relaxed"
+                        data-i18n="pillar2-desc">
+                        Chúng tôi tin vào sức mạnh của sự hợp tác chặt chẽ giữa đội ngũ kỹ thuật và những người có ý
+                        tưởng táo bạo.
+                    </p>
+                </div>
+                <!-- Pillar 3 -->
+                <div class="p-6 md:p-12 bg-white dark:bg-black">
+                    <div class="w-12 h-12 mb-6 md:mb-8">
+                        <iconify-icon icon="material-symbols:verified-user-outline"
+                            class="text-primary text-4xl"></iconify-icon>
+                    </div>
+                    <h3 class="font-title-md text-xl md:text-title-md text-black dark:text-white mb-4 md:mb-6"
+                        data-i18n="pillar3-title">Bảo mật tuyệt
+                        đối</h3>
+                    <p class="font-body-md text-on-surface-variant dark:text-white/60 leading-relaxed"
+                        data-i18n="pillar3-desc">
+                        Xây dựng niềm tin thông qua nền tảng bảo mật vững chắc, bảo vệ tài sản trí tuệ và dữ liệu của
+                        đối tác là ưu tiên hàng đầu.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section
+        class="py-16 md:py-32 px-6 md:px-gutter max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0"
+        id="vision">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
+            <div class="space-y-6 md:space-y-10">
+                <h2 class="font-headline-lg text-3xl md:text-headline-lg text-black dark:text-white leading-tight"
+                    data-i18n="about-title">
+                    Kiến tạo tương lai từ những <span class="text-primary">bản phác thảo</span> đầu tiên.
+                </h2>
+                <p class="font-body-lg text-base md:text-body-lg text-on-surface-variant dark:text-white/60 leading-relaxed"
+                    data-i18n="about-desc">
+                    Odrixon Studio được thành lập bởi lập trình viên đam mê. Chúng tôi đang xây dựng một xưởng
+                    sản xuất công nghệ nơi mọi ý tưởng đều được trân trọng và phát triển bằng cả tâm huyết.
+                </p>
+                <div class="space-y-6 md:space-y-8">
+                    <div class="flex gap-6">
+                        <div
+                            class="shrink-0 w-8 h-8 rounded-full border border-black dark:border-white/20 flex items-center justify-center font-label-code text-xs text-black dark:text-white">
+                            01</div>
+                        <div>
+                            <h4 class="font-title-md text-black dark:text-white mb-2 text-lg"
+                                data-i18n="about-step1-title">Giai đoạn Ý tưởng (Hiện tại)</h4>
+                            <p class="font-body-md text-on-surface-variant dark:text-white/60"
+                                data-i18n="about-step1-desc">Hoàn thiện quy trình, xây dựng đội ngũ nòng cốt và tìm kiếm
+                                các dự án thử nghiệm.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 opacity-40">
+                        <div
+                            class="shrink-0 w-8 h-8 rounded-full border border-black dark:border-white/20 flex items-center justify-center font-label-code text-xs text-black dark:text-white">
+                            02</div>
+                        <div>
+                            <h4 class="font-title-md text-black dark:text-white mb-2 text-lg"
+                                data-i18n="about-step2-title">Giai đoạn Tăng trưởng</h4>
+                            <p class="font-body-md text-on-surface-variant dark:text-white/60"
+                                data-i18n="about-step2-desc">Mở rộng quy mô sản xuất và ra mắt các sản phẩm đầu tiên
+                                trên thị trường.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative bg-surface-container dark:bg-white/5 p-4 transition-colors">
+                <img alt="Minimalist office space"
+                    class="w-full grayscale hover:grayscale-0 transition-all duration-700"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu4MHyeLKDWuc35TqpQAT95U_w5ys1izuVeeU8bfJpZUTXkOHu8S2yTuqlbY21idUEyCb_-fgYjG0okEhv3T4RHXspld4dPBKDur64FlpgySlNBV8l-JYjortec1Xetx1gtUrKkdMHrqT-R0av6uIaMkHD-nyMdvyLKFINYe-g3oEgR1-CXRQMGELbumigPo3-sWbUO7qYDtfbuTq4c-oXP7flDOTbD_xHqh8hvQb7cR9K8VWUvcsL4DrlFrJNyy44NhDlhZaJP8Y">
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section
+        class="py-16 md:py-32 px-6 md:px-gutter border-t border-black/5 dark:border-white/5 transition-all duration-1000 opacity-100 translate-y-0"
+        id="contact">
+        <div class="max-w-container-max mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
+                <div>
+                    <h2 class="font-headline-lg text-3xl md:text-headline-lg text-black dark:text-white mb-6 md:mb-8"
+                        data-i18n="contact-title">Cùng xây dựng điều gì đó thú vị</h2>
+                    <p class="font-body-lg text-base md:text-body-lg text-on-surface-variant dark:text-white/60 mb-8 md:mb-12"
+                        data-i18n="contact-desc">
+                        Bạn có một ý tưởng táo bạo nhưng chưa có đội ngũ thực hiện? Hãy để Odrixon Studio đồng hành cùng
+                        bạn từ những bước đầu tiên.
+                    </p>
+                    <div class="space-y-8 md:space-y-10">
+                        <div class="flex items-center gap-6">
+                            <iconify-icon icon="material-symbols:location-on"
+                                class="text-primary text-2xl"></iconify-icon>
+                            <p class="font-body-md text-black dark:text-white">TP. Cần Thơ, Việt Nam</p>
+                        </div>
+                        <div class="flex items-center gap-6">
+                            <iconify-icon icon="material-symbols:mail" class="text-primary text-2xl"></iconify-icon>
+                            <p class="font-body-md text-black dark:text-white">
+                                <a href="mailto:hello@odrixon.studio"
+                                    class="hover:text-primary transition-colors">hello@odrixon.studio</a>
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-6">
+                            <iconify-icon icon="material-symbols:call" class="text-primary text-2xl"></iconify-icon>
+                            <p class="font-body-md text-black dark:text-white">
+                                <a href="tel:+84395473223" class="hover:text-primary transition-colors">+84
+                                    395473223</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-surface-container dark:bg-white/5 p-6 md:p-12 transition-colors">
+                    <form class="space-y-8">
+                        <div class="space-y-2">
+                            <label class="font-label-sm text-black dark:text-white" data-i18n="form-name">Họ và
+                                tên</label>
+                            <input
+                                class="w-full bg-white dark:bg-black border-black/10 dark:border-white/10 text-black dark:text-white px-4 py-4 focus:ring-1 focus:ring-primary focus:border-primary transition-all outline-none"
+                                placeholder="Tên của bạn" type="text" data-i18n-placeholder="form-name-ph">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="font-label-sm text-black dark:text-white" data-i18n="form-email">Email liên
+                                hệ</label>
+                            <input
+                                class="w-full bg-white dark:bg-black border-black/10 dark:border-white/10 text-black dark:text-white px-4 py-4 focus:ring-1 focus:ring-primary focus:border-primary transition-all outline-none"
+                                placeholder="email@vi-du.com" type="email" data-i18n-placeholder="form-email-ph">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="font-label-sm text-black dark:text-white" data-i18n="form-message">Lời nhắn về
+                                ý tưởng của bạn</label>
+                            <textarea
+                                class="w-full bg-white dark:bg-black border-black/10 dark:border-white/10 text-black dark:text-white px-4 py-4 focus:ring-1 focus:ring-primary focus:border-primary transition-all outline-none"
+                                placeholder="Chia sẻ sơ lược về dự án của bạn..." rows="4"
+                                data-i18n-placeholder="form-message-ph"></textarea>
+                        </div>
+                        <button class="w-full btn-dropbox font-label-sm" data-i18n="form-submit">
+                            Gửi lời mời hợp tác
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer
+        class="bg-white dark:bg-black py-24 px-gutter border-t border-black/5 dark:border-white/5 transition-colors">
+        <div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-start gap-16">
+            <div class="max-w-xs">
+                <div class="flex items-center gap-3 mb-8">
+                    <img alt="Logo" class="h-8 w-8 grayscale dark:invert" src="img/logo.png">
+                    <span class="font-headline-lg text-2xl text-black dark:text-white">Odrixon</span>
+                </div>
+                <p class="font-body-md text-on-surface-variant dark:text-white/60" data-i18n="footer-desc">
+                    Studio công nghệ đang trong giai đoạn thành hình, tập trung vào các giải pháp phần mềm
+                    chất lượng cao.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-16">
+                <div>
+                    <h4 class="font-label-sm text-black dark:text-white mb-8" data-i18n="footer-col1-title">Studio</h4>
+                    <ul class="space-y-4">
+                        <li class=""><a
+                                class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
+                                href="#vision" data-i18n="nav-vision">Tầm nhìn</a></li>
+                        <li class=""><a
+                                class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
+                                href="#" data-i18n="footer-culture">Văn hóa</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-label-sm text-black dark:text-white mb-8" data-i18n="footer-col2-title">Pháp lý</h4>
+                    <ul class="space-y-4">
+                        <li class=""><a
+                                class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
+                                href="privacy.html" data-i18n="footer-privacy">Bảo mật</a></li>
+                        <li class=""><a
+                                class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
+                                href="terms.html" data-i18n="footer-terms">Điều khoản</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-label-sm text-black dark:text-white mb-8" data-i18n="footer-col3-title">Mạng xã hội
+                    </h4>
+                    <div class="flex gap-6">
+                        <a class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
+                            href="https://www.facebook.com/profile.php?id=61591041418507" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><iconify-icon icon="ri:facebook-fill" width="24"
+                                height="24"></iconify-icon></a>
+                        <a class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
+                            href="#" aria-label="Github"><iconify-icon icon="ri:github-fill" width="24"
+                                height="24"></iconify-icon></a>
+                        <a class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
+                            href="https://www.youtube.com/@OdrixonStudio" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><iconify-icon icon="ri:youtube-fill" width="24"
+                                height="24"></iconify-icon></a>
+                        <a class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
+                            href="https://www.tiktok.com/@odrixon.studio" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><iconify-icon icon="ri:tiktok-fill" width="24"
+                                height="24"></iconify-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-container-max mx-auto mt-24 pt-8 border-t border-black/5 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="font-label-sm text-on-surface-variant dark:text-white/60" data-i18n="footer-copyright">© 2024
+                Odrixon Studio. Ý tưởng của bạn, tâm huyết của chúng tôi.</p>
+        </div>
+    </footer>
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

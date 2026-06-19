@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title data-i18n="terms-meta-title">Điều khoản Dịch vụ | Odrixon Studio</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="apple-touch-icon" href="img/logo.png">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&amp;family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=JetBrains+Mono:wght@500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#f0f0fb",
+                        "on-primary-container": "#cad3ff",
+                        "on-secondary-fixed-variant": "#005137",
+                        "on-surface-variant": "#434655",
+                        "on-surface": "#1a1b23",
+                        "secondary-fixed": "#85f8c4",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#a73400",
+                        "surface-container": "#f7f9fa",
+                        "inverse-primary": "#b7c4ff",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#82f5c1",
+                        "surface-variant": "#e2e1ed",
+                        "inverse-surface": "#2e3039",
+                        "surface-container-high": "#e8e7f3",
+                        "outline-variant": "#c4c5d7",
+                        "primary-container": "#0061ff",
+                        "secondary-fixed-dim": "#68dba9",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#ffdbcf",
+                        "background": "#ffffff",
+                        "surface-bright": "#ffffff",
+                        "studio-info": "#0061ff",
+                        "primary-fixed-dim": "#b7c4ff",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-container": "#ffc9b7",
+                        "surface": "#ffffff",
+                        "on-tertiary-fixed": "#390c00",
+                        "on-secondary-fixed": "#002114",
+                        "on-tertiary-fixed-variant": "#832700",
+                        "secondary": "#006c4a",
+                        "on-background": "#1a1b23",
+                        "on-secondary-container": "#00714e",
+                        "studio-alert": "#D97706",
+                        "on-primary": "#ffffff",
+                        "primary": "#0061ff",
+                        "surface-container-highest": "#e2e1ed",
+                        "surface-dim": "#d9d9e5",
+                        "on-primary-fixed-variant": "#0039b5",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#ffb59c",
+                        "surface-tint": "#0061ff",
+                        "error": "#ba1a1a",
+                        "outline": "#747686",
+                        "studio-dark": "#0F172A",
+                        "studio-error": "#EF4444",
+                        "surface-container-low": "#fcfcfc",
+                        "primary-fixed": "#dce1ff",
+                        "tertiary": "#7f2500",
+                        "on-primary-fixed": "#001551"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "container-max": "1160px",
+                        "unit": "4px",
+                        "margin-mobile": "24px",
+                        "margin-desktop": "60px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-xl": ["Plus Jakarta Sans", "sans-serif"],
+                        "label-sm": ["Be Vietnam Pro", "sans-serif"],
+                        "label-code": ["JetBrains Mono", "monospace"],
+                        "body-md": ["Be Vietnam Pro", "sans-serif"],
+                        "body-lg": ["Be Vietnam Pro", "sans-serif"],
+                        "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
+                        "title-md": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "headline-xl": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "label-code": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["20px", { "lineHeight": "30px", "fontWeight": "400" }],
+                        "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "600" }],
+                        "title-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="overflow-x-hidden bg-white dark:bg-black text-on-surface dark:text-white transition-colors duration-300">
+    <!-- TopNavBar -->
+    <nav
+        class="fixed w-full top-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur-md border-b border-black/5 dark:border-white/5 transition-colors duration-300">
+        <div class="flex justify-between items-center h-14 md:h-16 px-gutter max-w-container-max mx-auto">
+            <a href="index.html" class="flex items-center gap-3">
+                <img alt="Odrixon Studio Logo" class="h-7 w-7 md:h-8 md:w-8 object-contain dark:invert"
+                    src="img/logo.png">
+                <span class="text-base md:text-lg font-bold text-black dark:text-white tracking-tight">Odrixon
+                    Studio</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="font-label-sm text-xs md:text-label-sm text-on-surface dark:text-white/70 hover:text-primary dark:hover:text-primary-container transition-colors"
+                    href="#vision" data-i18n="nav-vision">Tầm nhìn</a>
+                <a class="font-label-sm text-xs md:text-label-sm text-on-surface dark:text-white/70 hover:text-primary dark:hover:text-primary-container transition-colors"
+                    href="#approach" data-i18n="nav-approach">Hướng đi</a>
+                <a class="font-label-sm text-xs md:text-label-sm text-on-surface dark:text-white/70 hover:text-primary dark:hover:text-primary-container transition-colors"
+                    href="#contact" data-i18n="nav-contact">Hợp tác</a>
+            </div>
+            <div class="flex items-center gap-3">
+                <!-- Language Toggle -->
+                <button id="lang-toggle"
+                    class="p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-full transition-all flex items-center gap-1.5 group">
+                    <iconify-icon icon="material-symbols:language" class="text-lg"></iconify-icon>
+                    <span class="font-label-sm text-[10px] md:text-xs uppercase" id="lang-text">VN</span>
+                </button>
+                <!-- Theme Toggle -->
+                <button id="theme-toggle"
+                    class="p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-full transition-all">
+                    <iconify-icon id="theme-icon" icon="material-symbols:dark-mode-outline"
+                        class="text-lg"></iconify-icon>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <section class="relative pt-24 pb-20 md:pt-36 md:pb-32 px-6 md:px-gutter max-w-4xl mx-auto">
+        <h1 class="font-headline-xl text-3xl md:text-[48px] mb-4 md:mb-6 leading-tight text-black dark:text-white"
+            data-i18n="terms-title">
+            Điều khoản Dịch vụ — Odrixon Studio
+        </h1>
+        <p class="font-body-lg text-base md:text-lg text-on-surface-variant dark:text-white/70 mb-12 leading-relaxed"
+            data-i18n="terms-intro">
+            Chào mừng bạn đến với website của Odrixon Studio. Việc truy cập và sử dụng dịch vụ của chúng tôi đồng nghĩa
+            với việc bạn đồng ý tuân thủ các điều khoản và quy định dưới đây.
+        </p>
+
+        <div class="space-y-12">
+            <!-- Section 1 -->
+            <div>
+                <h2 class="font-title-md text-xl md:text-2xl text-black dark:text-white mb-4"
+                    data-i18n="terms-sec1-title">
+                    1. Chấp thuận điều khoản
+                </h2>
+                <div class="font-body-md text-sm md:text-base text-on-surface-variant dark:text-white/60 space-y-3 leading-relaxed"
+                    data-i18n="terms-sec1-desc">
+                    <p>Bằng việc truy cập vào website này hoặc sử dụng bất kỳ dịch vụ tư vấn, thiết kế và phát triển
+                        công nghệ nào của Odrixon Studio, bạn tự nguyện chấp thuận và chịu ràng buộc pháp lý bởi các
+                        điều khoản này. Nếu bạn không đồng ý với bất kỳ phần nào, vui lòng ngừng sử dụng dịch vụ của
+                        chúng tôi.</p>
+                </div>
+            </div>
+
+            <!-- Section 2 -->
+            <div>
+                <h2 class="font-title-md text-xl md:text-2xl text-black dark:text-white mb-4"
+                    data-i18n="terms-sec2-title">
+                    2. Quyền sở hữu trí tuệ
+                </h2>
+                <div class="font-body-md text-sm md:text-base text-on-surface-variant dark:text-white/60 space-y-3 leading-relaxed"
+                    data-i18n="terms-sec2-desc">
+                    <p>Tất cả nội dung, giao diện, hình ảnh, mã nguồn và tài sản kỹ thuật số xuất hiện trên website này
+                        đều thuộc quyền sở hữu trí tuệ duy nhất của Odrixon Studio, trừ khi có thỏa thuận khác bằng văn
+                        bản.</p>
+                    <p>Bạn không được tự ý sao chép, phân phối, sửa đổi hoặc sử dụng bất kỳ phần nào của website này cho
+                        mục đích thương mại khi chưa có sự đồng ý bằng văn bản của chúng tôi.</p>
+                </div>
+            </div>
+
+            <!-- Section 3 -->
+            <div>
+                <h2 class="font-title-md text-xl md:text-2xl text-black dark:text-white mb-4"
+                    data-i18n="terms-sec3-title">
+                    3. Quy định sử dụng dịch vụ
+                </h2>
+                <div class="font-body-md text-sm md:text-base text-on-surface-variant dark:text-white/60 space-y-3 leading-relaxed"
+                    data-i18n="terms-sec3-desc">
+                    <p>Bạn cam kết sử dụng dịch vụ của chúng tôi cho các mục đích hợp pháp và lành mạnh. Nghiêm cấm mọi
+                        hành vi:</p>
+                    <p>Tấn công, làm quá tải, hoặc tìm cách can thiệp vào hoạt động bình thường của hệ thống máy chủ và
+                        website.</p>
+                    <p>Phát tán phần mềm độc hại, mã độc hoặc spam liên hệ đến hệ thống của chúng tôi.</p>
+                    <p>Cung cấp thông tin định danh sai lệch hoặc giả mạo người khác khi đăng ký thông tin hợp tác.</p>
+                </div>
+            </div>
+
+            <!-- Section 4 -->
+            <div>
+                <h2 class="font-title-md text-xl md:text-2xl text-black dark:text-white mb-4"
+                    data-i18n="terms-sec4-title">
+                    4. Giới hạn trách nhiệm
+                </h2>
+                <div class="font-body-md text-sm md:text-base text-on-surface-variant dark:text-white/60 space-y-3 leading-relaxed"
+                    data-i18n="terms-sec4-desc">
+                    <p>Odrixon Studio luôn cố gắng cung cấp thông tin chính xác và kịp thời nhất trên website. Tuy
+                        nhiên, chúng tôi không đảm bảo tính chính xác hoàn hảo 100% trong mọi thời điểm hoặc không xảy
+                        ra lỗi kỹ thuật.</p>
+                    <p>Chúng tôi không chịu trách nhiệm đối với bất kỳ thiệt hại trực tiếp hay gián tiếp nào phát sinh
+                        từ việc sử dụng thông tin hoặc dịch vụ giới thiệu sơ bộ trên website này.</p>
+                </div>
+            </div>
+
+            <!-- Section 5 -->
+            <div>
+                <h2 class="font-title-md text-xl md:text-2xl text-black dark:text-white mb-4"
+                    data-i18n="terms-sec5-title">
+                    5. Luật áp dụng và Giải quyết tranh chấp
+                </h2>
+                <div class="font-body-md text-sm md:text-base text-on-surface-variant dark:text-white/60 space-y-3 leading-relaxed"
+                    data-i18n="terms-sec5-desc">
+                    <p>Các điều khoản dịch vụ này được điều chỉnh và giải thích theo các quy định hiện hành của pháp
+                        luật nước Cộng hòa Xã hội Chủ nghĩa Việt Nam.</p>
+                    <p>Mọi tranh chấp phát sinh từ các điều khoản này trước hết sẽ được giải quyết thông qua thương
+                        lượng hòa giải. Nếu không thể tự thương lượng, tranh chấp sẽ được đưa ra cơ quan Tòa án có thẩm
+                        quyền tại Việt Nam giải quyết.</p>
+                </div>
+            </div>
+
+            <!-- Section 6 -->
+            <div>
+                <h2 class="font-title-md text-xl md:text-2xl text-black dark:text-white mb-4"
+                    data-i18n="terms-sec6-title">
+                    6. Thay đổi điều khoản dịch vụ
+                </h2>
+                <div class="font-body-md text-sm md:text-base text-on-surface-variant dark:text-white/60 space-y-3 leading-relaxed"
+                    data-i18n="terms-sec6-desc">
+                    <p>Odrixon Studio có toàn quyền thay đổi, sửa đổi, thêm hoặc bớt các điều khoản này vào bất kỳ lúc
+                        nào mà không cần thông báo trước. Các thay đổi sẽ có hiệu lực ngay khi được đăng tải lên
+                        website. Việc bạn tiếp tục sử dụng website đồng nghĩa với việc chấp thuận các thay đổi đó.</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="mt-16 pt-8 border-t border-black/5 dark:border-white/5 text-xs text-on-surface-variant/80 dark:text-white/40 leading-relaxed"
+            data-i18n="terms-update">
+            Cập nhật lần cuối: Tháng 6 năm 2026. Odrixon Studio bảo lưu mọi quyền.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer
+        class="bg-white dark:bg-black py-24 px-gutter border-t border-black/5 dark:border-white/5 transition-colors">
+        <div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-start gap-16">
+            <div class="max-w-xs">
+                <div class="flex items-center gap-3 mb-8">
+                    <img alt="Logo" class="h-8 w-8 grayscale dark:invert" src="img/logo.png">
+                    <span class="font-headline-lg text-2xl text-black dark:text-white">Odrixon</span>
+                </div>
+                <p class="font-body-md text-on-surface-variant dark:text-white/60" data-i18n="footer-desc">
+                    Studio công nghệ đang trong giai đoạn thành hình, tập trung vào các giải pháp phần mềm chất lượng
+                    cao.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-16">
+                <div>
+                    <h4 class="font-label-sm text-black dark:text-white mb-8" data-i18n="footer-col1-title">Studio</h4>
+                    <ul class="space-y-4">
+                        <li class=""><a
+                                class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
+                                href="index.html#vision" data-i18n="nav-vision">Tầm nhìn</a></li>
+                        <li class=""><a
+                                class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
+                                href="#" data-i18n="footer-culture">Văn hóa</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-label-sm text-black dark:text-white mb-8" data-i18n="footer-col2-title">Pháp lý</h4>
+                    <ul class="space-y-4">
+                        <li class=""><a
+                                class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
+                                href="privacy.html" data-i18n="footer-privacy">Bảo mật</a></li>
+                        <li class=""><a
+                                class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
+                                href="terms.html" data-i18n="footer-terms">Điều khoản</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-label-sm text-black dark:text-white mb-8" data-i18n="footer-col3-title">Mạng xã hội
+                    </h4>
+                    <div class="flex gap-6">
+                        <a class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
+                            href="https://www.facebook.com/profile.php?id=61591041418507" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><iconify-icon icon="ri:facebook-fill" width="24"
+                                height="24"></iconify-icon></a>
+                        <a class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
+                            href="#" aria-label="Github"><iconify-icon icon="ri:github-fill" width="24"
+                                height="24"></iconify-icon></a>
+                        <a class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
+                            href="https://www.youtube.com/@OdrixonStudio" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><iconify-icon icon="ri:youtube-fill" width="24"
+                                height="24"></iconify-icon></a>
+                        <a class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
+                            href="https://www.tiktok.com/@odrixon.studio" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><iconify-icon icon="ri:tiktok-fill" width="24"
+                                height="24"></iconify-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-container-max mx-auto mt-24 pt-8 border-t border-black/5 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="font-label-sm text-on-surface-variant dark:text-white/60" data-i18n="footer-copyright">© 2024
+                Odrixon Studio. Ý tưởng của bạn, tâm huyết của chúng tôi.</p>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
