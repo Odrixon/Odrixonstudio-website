@@ -277,10 +277,10 @@
                         class="shrink-0 w-8 h-8 rounded-full border border-black dark:border-white/20 flex items-center justify-center font-label-code text-xs text-black dark:text-white">
                         01</div>
                     <div>
-                        <h4 class="font-title-md text-black dark:text-white mb-2 text-lg"
-                            data-i18n="about-step1-title">Giai đoạn Ý tưởng (Hiện tại)</h4>
-                        <p class="font-body-md text-on-surface-variant dark:text-white/60"
-                            data-i18n="about-step1-desc">Hoàn thiện quy trình, xây dựng đội ngũ nòng cốt và tìm kiếm
+                        <h4 class="font-title-md text-black dark:text-white mb-2 text-lg" data-i18n="about-step1-title">
+                            Giai đoạn Ý tưởng (Hiện tại)</h4>
+                        <p class="font-body-md text-on-surface-variant dark:text-white/60" data-i18n="about-step1-desc">
+                            Hoàn thiện quy trình, xây dựng đội ngũ nòng cốt và tìm kiếm
                             các dự án thử nghiệm.</p>
                     </div>
                 </div>
@@ -289,10 +289,10 @@
                         class="shrink-0 w-8 h-8 rounded-full border border-black dark:border-white/20 flex items-center justify-center font-label-code text-xs text-black dark:text-white">
                         02</div>
                     <div>
-                        <h4 class="font-title-md text-black dark:text-white mb-2 text-lg"
-                            data-i18n="about-step2-title">Giai đoạn Tăng trưởng</h4>
-                        <p class="font-body-md text-on-surface-variant dark:text-white/60"
-                            data-i18n="about-step2-desc">Mở rộng quy mô sản xuất và ra mắt các sản phẩm đầu tiên
+                        <h4 class="font-title-md text-black dark:text-white mb-2 text-lg" data-i18n="about-step2-title">
+                            Giai đoạn Tăng trưởng</h4>
+                        <p class="font-body-md text-on-surface-variant dark:text-white/60" data-i18n="about-step2-desc">
+                            Mở rộng quy mô sản xuất và ra mắt các sản phẩm đầu tiên
                             trên thị trường.</p>
                     </div>
                 </div>
@@ -322,8 +322,8 @@
                         <div class="flex items-center gap-6">
                             <iconify-icon icon="material-symbols:mail" class="text-primary text-2xl"></iconify-icon>
                             <p class="font-body-md text-black dark:text-white">
-                                <a href="mailto:hello@odrixon.studio"
-                                    class="hover:text-primary transition-colors">hello@odrixon.studio</a>
+                                <a href="mailto:contact@odrixon.com"
+                                    class="hover:text-primary transition-colors">contact@odrixon.com</a>
                             </p>
                         </div>
                         <div class="flex items-center gap-6">
@@ -336,30 +336,32 @@
                     </div>
                 </div>
                 <div class="bg-surface-container dark:bg-white/5 p-6 md:p-12 transition-colors">
-                    <form class="space-y-8">
+                    <form class="space-y-8" id="contact-form" method="POST">
                         <div class="space-y-2">
                             <label class="font-label-sm text-black dark:text-white" data-i18n="form-name">Họ và
                                 tên</label>
                             <input
                                 class="w-full bg-white dark:bg-black border-black/10 dark:border-white/10 text-black dark:text-white px-4 py-4 focus:ring-1 focus:ring-primary focus:border-primary transition-all outline-none"
-                                placeholder="Tên của bạn" type="text" data-i18n-placeholder="form-name-ph">
+                                name="name" required placeholder="Tên của bạn" type="text"
+                                data-i18n-placeholder="form-name-ph">
                         </div>
                         <div class="space-y-2">
                             <label class="font-label-sm text-black dark:text-white" data-i18n="form-email">Email liên
                                 hệ</label>
                             <input
                                 class="w-full bg-white dark:bg-black border-black/10 dark:border-white/10 text-black dark:text-white px-4 py-4 focus:ring-1 focus:ring-primary focus:border-primary transition-all outline-none"
-                                placeholder="email@vi-du.com" type="email" data-i18n-placeholder="form-email-ph">
+                                name="email" required placeholder="email@vi-du.com" type="email"
+                                data-i18n-placeholder="form-email-ph">
                         </div>
                         <div class="space-y-2">
                             <label class="font-label-sm text-black dark:text-white" data-i18n="form-message">Lời nhắn về
                                 ý tưởng của bạn</label>
                             <textarea
                                 class="w-full bg-white dark:bg-black border-black/10 dark:border-white/10 text-black dark:text-white px-4 py-4 focus:ring-1 focus:ring-primary focus:border-primary transition-all outline-none"
-                                placeholder="Chia sẻ sơ lược về dự án của bạn..." rows="4"
+                                name="message" required placeholder="Chia sẻ sơ lược về dự án của bạn..." rows="4"
                                 data-i18n-placeholder="form-message-ph"></textarea>
                         </div>
-                        <button class="w-full btn-dropbox font-label-sm" data-i18n="form-submit">
+                        <button type="submit" class="w-full btn-dropbox font-label-sm" data-i18n="form-submit">
                             Gửi lời mời hợp tác
                         </button>
                     </form>
@@ -409,16 +411,19 @@
                     </h4>
                     <div class="flex gap-6">
                         <a class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
-                            href="https://www.facebook.com/profile.php?id=61591041418507" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><iconify-icon icon="ri:facebook-fill" width="24"
-                                height="24"></iconify-icon></a>
+                            href="https://www.facebook.com/profile.php?id=61591041418507" target="_blank"
+                            rel="noopener noreferrer" aria-label="Facebook"><iconify-icon icon="ri:facebook-fill"
+                                width="24" height="24"></iconify-icon></a>
                         <a class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
                             href="#" aria-label="Github"><iconify-icon icon="ri:github-fill" width="24"
                                 height="24"></iconify-icon></a>
                         <a class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
-                            href="https://www.youtube.com/@OdrixonStudio" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><iconify-icon icon="ri:youtube-fill" width="24"
+                            href="https://www.youtube.com/@OdrixonStudio" target="_blank" rel="noopener noreferrer"
+                            aria-label="Youtube"><iconify-icon icon="ri:youtube-fill" width="24"
                                 height="24"></iconify-icon></a>
                         <a class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
-                            href="https://www.tiktok.com/@odrixon.studio" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><iconify-icon icon="ri:tiktok-fill" width="24"
+                            href="https://www.tiktok.com/@odrixon.studio" target="_blank" rel="noopener noreferrer"
+                            aria-label="TikTok"><iconify-icon icon="ri:tiktok-fill" width="24"
                                 height="24"></iconify-icon></a>
                     </div>
                 </div>

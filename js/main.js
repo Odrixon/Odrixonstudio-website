@@ -103,4 +103,20 @@ document.addEventListener('DOMContentLoaded', () => {
         section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-8');
         observer.observe(section);
     });
+
+    // Contact Form submission handler opening mail client
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = contactForm.querySelector('[name="name"]').value;
+            const email = contactForm.querySelector('[name="email"]').value;
+            const message = contactForm.querySelector('[name="message"]').value;
+
+            const subject = encodeURIComponent(`Lời mời hợp tác từ ${name}`);
+            const body = encodeURIComponent(`Họ và tên: ${name}\nEmail liên hệ: ${email}\n\nLời nhắn về ý tưởng:\n${message}`);
+
+            window.location.href = `mailto:contact@odrixon.com?subject=${subject}&body=${body}`;
+        });
+    }
 });
