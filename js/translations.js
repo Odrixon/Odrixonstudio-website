@@ -60,7 +60,7 @@ const translations = {
         'form-message-ph': 'Chia sẻ sơ lược về dự án của bạn...',
         'form-submit': 'Gửi lời mời hợp tác',
         
-        'footer-desc': 'Building useful software that lasts.',
+        'footer-desc': 'Ý tưởng của bạn, tâm huyết của chúng tôi.',
         'footer-legal': 'Pháp lý',
         'footer-privacy': 'Bảo mật',
         'footer-terms': 'Điều khoản',
@@ -166,7 +166,7 @@ const translations = {
         'form-message-ph': 'Briefly share about your project...',
         'form-submit': 'Send Partnership Invite',
         
-        'footer-desc': 'Building useful software that lasts.',
+        'footer-desc': 'Your vision, our dedication.',
         'footer-legal': 'Legal',
         'footer-privacy': 'Privacy',
         'footer-terms': 'Terms',
