@@ -66,6 +66,11 @@ const translations = {
         'footer-terms': 'Điều khoản',
         'footer-copyright': '© 2026 Odrixon Studio. All rights reserved.',
 
+        'cookie-title': 'Chúng tôi sử dụng cookie',
+        'cookie-desc': 'Website sử dụng cookie để lưu tùy chọn ngôn ngữ, chế độ hiển thị và tối ưu trải nghiệm của bạn.',
+        'cookie-accept': 'Chấp nhận',
+        'cookie-decline': 'Từ chối',
+
         'privacy-meta-title': 'Chính sách Bảo mật | Odrixon Studio',
         'privacy-title': 'Chính sách Bảo mật — Odrixon Studio',
         'privacy-intro': 'Tại Odrixon Studio, chúng tôi hiểu rằng ý tưởng là tài sản quý giá nhất của đối tác. Bảo mật không chỉ là cam kết kỹ thuật, mà là nền tảng niềm tin để chúng ta cùng nhau kiến tạo tương lai.',
@@ -171,6 +176,11 @@ const translations = {
         'footer-privacy': 'Privacy',
         'footer-terms': 'Terms',
         'footer-copyright': '© 2026 Odrixon Studio. All rights reserved.',
+
+        'cookie-title': 'We use cookies',
+        'cookie-desc': 'This website uses cookies to remember your language and theme preferences and enhance your experience.',
+        'cookie-accept': 'Accept',
+        'cookie-decline': 'Decline',
 
         'privacy-meta-title': 'Privacy Policy | Odrixon Studio',
         'privacy-title': 'Privacy Policy — Odrixon Studio',

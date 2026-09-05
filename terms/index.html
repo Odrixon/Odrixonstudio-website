@@ -209,6 +209,34 @@
         </div>
     </footer>
 
+    <!-- COOKIE CONSENT BANNER -->
+    <div id="cookie-banner" class="fixed bottom-0 left-0 w-full z-50 py-6 px-6 md:py-7 md:px-8 bg-white/95 dark:bg-zinc-900/95 backdrop-blur-2xl border-t border-zinc-200 dark:border-zinc-800 shadow-[0_-12px_40px_rgba(0,0,0,0.15)] transition-all duration-500 translate-y-full opacity-0 pointer-events-none">
+        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-4 text-center lg:text-left">
+                <div class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 flex items-center justify-center shrink-0 hidden sm:flex shadow-sm">
+                    <iconify-icon icon="material-symbols:cookie-outline" class="text-2xl md:text-3xl"></iconify-icon>
+                </div>
+                <div>
+                    <h3 class="text-base md:text-lg font-bold text-zinc-950 dark:text-white" data-i18n="cookie-title">Chúng tôi sử dụng cookie</h3>
+                    <p class="text-sm md:text-base text-zinc-600 dark:text-zinc-400 leading-relaxed mt-1" data-i18n="cookie-desc">
+                        Website sử dụng cookie để lưu tùy chọn ngôn ngữ, chế độ hiển thị và tối ưu trải nghiệm của bạn.
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3.5 shrink-0">
+                <button id="cookie-accept" class="px-6 py-3 md:px-7 md:py-3.5 rounded-full bg-black dark:bg-white text-white dark:text-black text-sm md:text-base font-semibold hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-all shadow-md" data-i18n="cookie-accept">
+                    Chấp nhận
+                </button>
+                <button id="cookie-decline" class="px-6 py-3 md:px-7 md:py-3.5 rounded-full border border-zinc-300 dark:border-zinc-700 hover:border-zinc-500 text-zinc-700 dark:text-zinc-300 text-sm md:text-base font-medium transition-all" data-i18n="cookie-decline">
+                    Từ chối
+                </button>
+                <button id="cookie-close" class="text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 transition-colors p-2 ml-1" aria-label="Close cookie banner">
+                    <iconify-icon icon="material-symbols:close-rounded" class="text-2xl"></iconify-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
     <script src="../js/translations.js"></script>
     <script src="../js/main.js"></script>

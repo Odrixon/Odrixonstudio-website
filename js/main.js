@@ -161,4 +161,38 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = `mailto:contact@odrixon.com?subject=${subject}&body=${body}`;
         });
     }
+
+    // Cookie Banner Logic
+    const cookieBanner = document.getElementById('cookie-banner');
+    const cookieAccept = document.getElementById('cookie-accept');
+    const cookieDecline = document.getElementById('cookie-decline');
+    const cookieClose = document.getElementById('cookie-close');
+
+    if (cookieBanner) {
+        const consent = localStorage.getItem('cookie_consent');
+        if (!consent) {
+            setTimeout(() => {
+                cookieBanner.classList.remove('translate-y-full', 'opacity-0', 'pointer-events-none');
+                cookieBanner.classList.add('translate-y-0', 'opacity-100');
+            }, 800);
+        }
+
+        const hideBanner = (status) => {
+            cookieBanner.classList.remove('translate-y-0', 'opacity-100');
+            cookieBanner.classList.add('translate-y-full', 'opacity-0', 'pointer-events-none');
+            if (status) {
+                localStorage.setItem('cookie_consent', status);
+            }
+        };
+
+        if (cookieAccept) {
+            cookieAccept.addEventListener('click', () => hideBanner('accepted'));
+        }
+        if (cookieDecline) {
+            cookieDecline.addEventListener('click', () => hideBanner('declined'));
+        }
+        if (cookieClose) {
+            cookieClose.addEventListener('click', () => hideBanner('dismissed'));
+        }
+    }
 });
