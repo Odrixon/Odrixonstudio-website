@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
         document.documentElement.lang = lang;
-        document.title = lang === 'vi' ? 'Odrixon Studio | Ý tưởng của bạn, tâm huyết của chúng tôi' : 'Odrixon Studio | Your ideas, our passion';
+        document.title = lang === 'vi' ? 'Odrixon Studio | Chúng tôi xây dựng những sản phẩm số được tạo ra để tồn tại' : 'Odrixon Studio | We build digital products made to endure';
         const langTextEl = document.getElementById('lang-text');
         if (langTextEl) {
             langTextEl.innerText = lang.toUpperCase();
@@ -66,23 +66,57 @@ document.addEventListener('DOMContentLoaded', () => {
     updateLanguage(currentLang);
     updateTheme(currentTheme);
 
-    // Simple smooth scroll
+    // Initialize Lenis Smooth Scroll
+    let lenis = null;
+    if (typeof Lenis !== 'undefined') {
+        lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // standard exponential ease-out
+            orientation: 'vertical',
+            gestureOrientation: 'vertical',
+            smoothWheel: true,
+            wheelMultiplier: 1,
+            touchMultiplier: 2,
+            infinite: false
+        });
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+    }
+
+    // Smooth scroll for anchor links with Lenis integration
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
             const href = this.getAttribute('href');
-            if (href === '#') {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
+            if (!href) return;
+
+            e.preventDefault();
+            if (lenis) {
+                if (href === '#') {
+                    lenis.scrollTo(0, { duration: 1.2 });
+                } else {
+                    const target = document.querySelector(href);
+                    if (target) {
+                        lenis.scrollTo(target, { offset: -80, duration: 1.2 });
+                    }
+                }
             } else {
-                const target = document.querySelector(href);
-                if (target) {
+                if (href === '#') {
                     window.scrollTo({
-                        top: target.offsetTop - 100,
+                        top: 0,
                         behavior: 'smooth'
                     });
+                } else {
+                    const target = document.querySelector(href);
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
                 }
             }
         });
