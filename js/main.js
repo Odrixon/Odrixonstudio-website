@@ -19,7 +19,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
         document.documentElement.lang = lang;
-        document.title = lang === 'vi' ? 'Odrixon Studio | Chúng tôi xây dựng những sản phẩm số được tạo ra để tồn tại' : 'Odrixon Studio | We build digital products made to endure';
+        const titleEl = document.querySelector('title[data-i18n]');
+        if (titleEl) {
+            const titleKey = titleEl.getAttribute('data-i18n');
+            if (translations[lang] && translations[lang][titleKey]) {
+                document.title = translations[lang][titleKey];
+            }
+        } else {
+            document.title = lang === 'vi' ? 'Odrixon Studio | Chúng tôi xây dựng những sản phẩm số được tạo ra để tồn tại' : 'Odrixon Studio | We build digital products made to endure';
+        }
         const langTextEl = document.getElementById('lang-text');
         if (langTextEl) {
             langTextEl.innerText = lang.toUpperCase();

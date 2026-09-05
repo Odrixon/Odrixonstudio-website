@@ -8,374 +8,247 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../img/logo.png">
     <link rel="apple-touch-icon" href="../img/logo.png">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&amp;family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=JetBrains+Mono:wght@500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet">
-    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
-    <script id="tailwind-config">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
-                    "colors": {
-                        "inverse-on-surface": "#f0f0fb",
-                        "on-primary-container": "#cad3ff",
-                        "on-secondary-fixed-variant": "#005137",
-                        "on-surface-variant": "#434655",
-                        "on-surface": "#1a1b23",
-                        "secondary-fixed": "#85f8c4",
-                        "surface-container-lowest": "#ffffff",
-                        "on-secondary": "#ffffff",
-                        "tertiary-container": "#a73400",
-                        "surface-container": "#f7f9fa",
-                        "inverse-primary": "#b7c4ff",
-                        "on-tertiary": "#ffffff",
-                        "secondary-container": "#82f5c1",
-                        "surface-variant": "#e2e1ed",
-                        "inverse-surface": "#2e3039",
-                        "surface-container-high": "#e8e7f3",
-                        "outline-variant": "#c4c5d7",
-                        "primary-container": "#0061ff",
-                        "secondary-fixed-dim": "#68dba9",
-                        "on-error": "#ffffff",
-                        "tertiary-fixed": "#ffdbcf",
-                        "background": "#ffffff",
-                        "surface-bright": "#ffffff",
-                        "studio-info": "#0061ff",
-                        "primary-fixed-dim": "#b7c4ff",
-                        "on-error-container": "#93000a",
-                        "on-tertiary-container": "#ffc9b7",
-                        "surface": "#ffffff",
-                        "on-tertiary-fixed": "#390c00",
-                        "on-secondary-fixed": "#002114",
-                        "on-tertiary-fixed-variant": "#832700",
-                        "secondary": "#006c4a",
-                        "on-background": "#1a1b23",
-                        "on-secondary-container": "#00714e",
-                        "studio-alert": "#D97706",
-                        "on-primary": "#ffffff",
-                        "primary": "#0061ff",
-                        "surface-container-highest": "#e2e1ed",
-                        "surface-dim": "#d9d9e5",
-                        "on-primary-fixed-variant": "#0039b5",
-                        "error-container": "#ffdad6",
-                        "tertiary-fixed-dim": "#ffb59c",
-                        "surface-tint": "#0061ff",
-                        "error": "#ba1a1a",
-                        "outline": "#747686",
-                        "studio-dark": "#0F172A",
-                        "studio-error": "#EF4444",
-                        "surface-container-low": "#fcfcfc",
-                        "primary-fixed": "#dce1ff",
-                        "tertiary": "#7f2500",
-                        "on-primary-fixed": "#001551"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0px",
-                        "lg": "0px",
-                        "xl": "0px",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "gutter": "24px",
-                        "container-max": "1160px",
-                        "unit": "4px",
-                        "margin-mobile": "24px",
-                        "margin-desktop": "60px"
-                    },
-                    "fontFamily": {
-                        "headline-lg-mobile": ["Plus Jakarta Sans", "sans-serif"],
-                        "headline-xl": ["Plus Jakarta Sans", "sans-serif"],
-                        "label-sm": ["Be Vietnam Pro", "sans-serif"],
-                        "label-code": ["JetBrains Mono", "monospace"],
-                        "body-md": ["Be Vietnam Pro", "sans-serif"],
-                        "body-lg": ["Be Vietnam Pro", "sans-serif"],
-                        "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
-                        "title-md": ["Plus Jakarta Sans", "sans-serif"]
-                    },
-                    "fontSize": {
-                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
-                        "headline-xl": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
-                        "label-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
-                        "label-code": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
-                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
-                        "body-lg": ["20px", { "lineHeight": "30px", "fontWeight": "400" }],
-                        "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "600" }],
-                        "title-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
+                    colors: {
+                        primary: '#2563eb',
+                        'primary-hover': '#1d4ed8',
                     }
-                },
-            },
+                }
+            }
         }
     </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body class="overflow-x-hidden bg-white dark:bg-black text-on-surface dark:text-white transition-colors duration-300">
-    <!-- TopNavBar -->
-    <nav
-        class="fixed w-full top-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur-md border-b border-black/5 dark:border-white/5 transition-colors duration-300">
-        <div class="flex justify-between items-center h-14 md:h-16 px-gutter max-w-container-max mx-auto">
-            <a href="../" class="flex items-center gap-3">
-                <img alt="Odrixon Studio Logo" class="h-7 w-7 md:h-8 md:w-8 object-contain dark:invert"
-                    src="../img/logo.png">
-                <span class="text-base md:text-lg font-bold text-black dark:text-white tracking-tight">Odrixon
-                    Studio</span>
+<body class="bg-white dark:bg-black text-zinc-900 dark:text-zinc-100 transition-colors duration-300 antialiased selection:bg-blue-600 selection:text-white">
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-white/85 dark:bg-black/85 border-b border-zinc-100 dark:border-zinc-900 transition-colors duration-300">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="h-16 md:h-18 flex items-center justify-between">
+                
+                <!-- Logo -->
+                <a href="../" class="flex items-center gap-3 group">
+                    <img src="../img/logo.png" alt="Odrixon Studio Logo" class="w-7 h-7 object-contain dark:invert transition-transform group-hover:scale-105">
+                    <span class="font-bold text-base md:text-lg tracking-tight">
+                        Odrixon Studio
+                    </span>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-600 dark:text-zinc-400">
+                    <a href="../#story" class="hover:text-black dark:hover:text-white transition-colors" data-i18n="nav-story">Câu chuyện</a>
+                    <a href="../#services" class="hover:text-black dark:hover:text-white transition-colors" data-i18n="nav-services">Dịch vụ</a>
+                    <a href="../#process" class="hover:text-black dark:hover:text-white transition-colors" data-i18n="nav-process">Quy trình</a>
+                    <a href="../#contact" class="hover:text-black dark:hover:text-white transition-colors" data-i18n="nav-contact">Liên hệ</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="flex items-center gap-2.5">
+                    <!-- Language Toggle -->
+                    <button id="lang-toggle" class="px-2.5 py-1.5 hover:bg-zinc-100 dark:hover:bg-zinc-800 rounded-full transition-colors flex items-center gap-1 text-xs font-semibold uppercase" aria-label="Toggle language">
+                        <iconify-icon icon="material-symbols:language" class="text-base"></iconify-icon>
+                        <span id="lang-text">VN</span>
+                    </button>
+
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle" class="p-2 hover:bg-zinc-100 dark:hover:bg-zinc-800 rounded-full transition-colors text-zinc-700 dark:text-zinc-300" aria-label="Toggle theme">
+                        <iconify-icon id="theme-icon" icon="material-symbols:dark-mode-outline" class="text-lg"></iconify-icon>
+                    </button>
+
+                    <!-- CTA -->
+                    <a href="../#contact" class="hidden sm:inline-flex px-4 py-2 rounded-full bg-black dark:bg-white text-white dark:text-black text-xs md:text-sm font-semibold hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-all shadow-sm" data-i18n="nav-cta">
+                        Bắt đầu
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENT SECTION -->
+    <main class="relative min-h-screen pt-28 pb-20 md:pt-36 md:pb-28 overflow-hidden">
+        <div class="glow top-20 left-10 md:left-24"></div>
+
+        <div class="max-w-4xl mx-auto px-6 relative z-10">
+            <!-- Breadcrumb / Tag -->
+            <a href="../" class="inline-flex items-center gap-2 text-xs md:text-sm font-bold uppercase tracking-[0.2em] text-blue-600 dark:text-blue-400 hover:opacity-80 transition-opacity mb-4">
+                <iconify-icon icon="material-symbols:arrow-back-rounded" class="text-base"></iconify-icon>
+                <span data-i18n="hero-tag">ODRIXON STUDIO</span>
             </a>
-            <div class="hidden md:flex items-center gap-8">
-                <a class="font-label-sm text-xs md:text-label-sm text-on-surface dark:text-white/70 hover:text-primary dark:hover:text-primary-container transition-colors"
-                    href="../#vision" data-i18n="nav-vision">Tầm nhìn</a>
-                <a class="font-label-sm text-xs md:text-label-sm text-on-surface dark:text-white/70 hover:text-primary dark:hover:text-primary-container transition-colors"
-                    href="../#approach" data-i18n="nav-approach">Hướng đi</a>
-                <a class="font-label-sm text-xs md:text-label-sm text-on-surface dark:text-white/70 hover:text-primary dark:hover:text-primary-container transition-colors"
-                    href="../#contact" data-i18n="nav-contact">Hợp tác</a>
+
+            <!-- Heading -->
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-zinc-950 dark:text-white leading-tight mb-6" data-i18n="privacy-title">
+                Chính sách Bảo mật — Odrixon Studio
+            </h1>
+
+            <p class="text-base md:text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed font-normal mb-12 md:mb-16 border-b border-zinc-200 dark:border-zinc-800 pb-8" data-i18n="privacy-intro">
+                Tại Odrixon Studio, chúng tôi hiểu rằng ý tưởng là tài sản quý giá nhất của đối tác. Bảo mật không chỉ là cam kết kỹ thuật, mà là nền tảng niềm tin để chúng ta cùng nhau kiến tạo tương lai.
+            </p>
+
+            <div class="space-y-10 md:space-y-12">
+                <!-- Section 1 -->
+                <section class="space-y-3">
+                    <h2 class="text-xl md:text-2xl font-bold text-zinc-950 dark:text-white tracking-tight" data-i18n="privacy-sec1-title">
+                        1. Nguyên tắc cốt lõi
+                    </h2>
+                    <div class="text-sm md:text-base text-zinc-600 dark:text-zinc-400 space-y-3 leading-relaxed" data-i18n="privacy-sec1-desc">
+                        <p><strong>Tính bảo mật tuyệt đối:</strong> Mọi thông tin, ý tưởng, bản vẽ kỹ thuật hoặc dữ liệu mà đối tác chia sẻ với chúng tôi đều được coi là "Thông tin mật" và được bảo vệ nghiêm ngặt.</p>
+                        <p><strong>Không chia sẻ dữ liệu:</strong> Chúng tôi cam kết không bán, không cho thuê hoặc chia sẻ dữ liệu của đối tác cho bất kỳ bên thứ ba nào khi chưa có sự đồng ý bằng văn bản.</p>
+                        <p><strong>Tối giản hóa dữ liệu:</strong> Chúng tôi chỉ thu thập những thông tin cần thiết nhất để phục vụ quá trình tư vấn và triển khai dự án.</p>
+                    </div>
+                </section>
+
+                <!-- Section 2 -->
+                <section class="space-y-3">
+                    <h2 class="text-xl md:text-2xl font-bold text-zinc-950 dark:text-white tracking-tight" data-i18n="privacy-sec2-title">
+                        2. Thông tin chúng tôi thu thập
+                    </h2>
+                    <div class="text-sm md:text-base text-zinc-600 dark:text-zinc-400 space-y-3 leading-relaxed" data-i18n="privacy-sec2-desc">
+                        <p>Khi bạn kết nối với Odrixon Studio qua website hoặc các kênh trực tiếp, chúng tôi có thể thu thập:</p>
+                        <p><strong>Thông tin định danh:</strong> Họ tên, email, số điện thoại để liên lạc.</p>
+                        <p><strong>Thông tin dự án:</strong> Nội dung mô tả ý tưởng, yêu cầu kỹ thuật và mục tiêu kinh doanh mà bạn chia sẻ trong các buổi tư vấn.</p>
+                    </div>
+                </section>
+
+                <!-- Section 3 -->
+                <section class="space-y-3">
+                    <h2 class="text-xl md:text-2xl font-bold text-zinc-950 dark:text-white tracking-tight" data-i18n="privacy-sec3-title">
+                        3. Cách chúng tôi bảo vệ tài sản trí tuệ
+                    </h2>
+                    <div class="text-sm md:text-base text-zinc-600 dark:text-zinc-400 space-y-3 leading-relaxed" data-i18n="privacy-sec3-desc">
+                        <p><strong>Kiểm soát truy cập:</strong> Chỉ đội ngũ nòng cốt tham gia trực tiếp vào dự án mới có quyền truy cập vào dữ liệu của bạn.</p>
+                        <p><strong>Môi trường phát triển an toàn:</strong> Các dự án được lưu trữ trên hệ thống máy chủ có bảo mật cao, mã hóa dữ liệu đầu cuối và sao lưu thường xuyên.</p>
+                        <p><strong>Cam kết NDA (Thỏa thuận bảo mật):</strong> Đối với các dự án cần tính riêng tư cao, chúng tôi sẵn sàng ký kết văn bản cam kết bảo mật (Non-Disclosure Agreement) trước khi thảo luận chi tiết về kỹ thuật.</p>
+                    </div>
+                </section>
+
+                <!-- Section 4 -->
+                <section class="space-y-3">
+                    <h2 class="text-xl md:text-2xl font-bold text-zinc-950 dark:text-white tracking-tight" data-i18n="privacy-sec4-title">
+                        4. Sử dụng thông tin
+                    </h2>
+                    <div class="text-sm md:text-base text-zinc-600 dark:text-zinc-400 space-y-3 leading-relaxed" data-i18n="privacy-sec4-desc">
+                        <p>Thông tin của bạn được sử dụng cho các mục đích:</p>
+                        <p>Liên lạc, phản hồi và tư vấn giải pháp kỹ thuật cho ý tưởng của bạn.</p>
+                        <p>Cập nhật tiến độ dự án (nếu đã ký kết hợp tác).</p>
+                        <p>Cải thiện trải nghiệm dịch vụ của Odrixon Studio dựa trên phản hồi của bạn.</p>
+                    </div>
+                </section>
+
+                <!-- Section 5 -->
+                <section class="space-y-3">
+                    <h2 class="text-xl md:text-2xl font-bold text-zinc-950 dark:text-white tracking-tight" data-i18n="privacy-sec5-title">
+                        5. Thời hạn lưu trữ dữ liệu
+                    </h2>
+                    <div class="text-sm md:text-base text-zinc-600 dark:text-zinc-400 space-y-3 leading-relaxed" data-i18n="privacy-sec5-desc">
+                        <p>Chúng tôi chỉ lưu trữ dữ liệu dự án và thông tin cá nhân của bạn trong thời gian cần thiết để hoàn thành mục đích thu thập (ví dụ: cho đến khi dự án kết thúc hoặc hoàn thành dịch vụ tư vấn giải pháp) hoặc cho đến khi nhận được yêu cầu xóa bỏ thông tin từ phía đối tác. Điều này giúp đảm bảo tài sản trí tuệ và thông tin của bạn không bị lưu trữ vô thời hạn.</p>
+                    </div>
+                </section>
+
+                <!-- Section 6 -->
+                <section class="space-y-3">
+                    <h2 class="text-xl md:text-2xl font-bold text-zinc-950 dark:text-white tracking-tight" data-i18n="privacy-sec6-title">
+                        6. Cookie và dữ liệu tự động
+                    </h2>
+                    <div class="text-sm md:text-base text-zinc-600 dark:text-zinc-400 space-y-3 leading-relaxed" data-i18n="privacy-sec6-desc">
+                        <p>Website này sử dụng cookie để lưu trữ các tùy chọn hiển thị cá nhân của bạn (như ngôn ngữ ưa thích và cài đặt chế độ sáng/tối). Ngoài ra, chúng tôi có thể sử dụng các công cụ phân tích lưu lượng ẩn danh (như Google Analytics) để tối ưu cấu trúc website và nâng cao chất lượng dịch vụ. Bạn có thể chủ động tắt cookie thông qua tùy chọn cài đặt trên trình duyệt của mình.</p>
+                    </div>
+                </section>
+
+                <!-- Section 7 -->
+                <section class="space-y-3">
+                    <h2 class="text-xl md:text-2xl font-bold text-zinc-950 dark:text-white tracking-tight" data-i18n="privacy-sec7-title">
+                        7. Trường hợp ngoại lệ (Pháp lý)
+                    </h2>
+                    <div class="text-sm md:text-base text-zinc-600 dark:text-zinc-400 space-y-3 leading-relaxed" data-i18n="privacy-sec7-desc">
+                        <p>Chúng tôi cam kết bảo vệ thông tin mật của đối tác trong mọi khả năng. Tuy nhiên, chúng tôi có thể buộc phải tiết lộ thông tin khi có yêu cầu bằng văn bản bởi các cơ quan pháp luật có thẩm quyền theo đúng quy định hiện hành của pháp luật Việt Nam.</p>
+                    </div>
+                </section>
+
+                <!-- Section 8 -->
+                <section class="space-y-3">
+                    <h2 class="text-xl md:text-2xl font-bold text-zinc-950 dark:text-white tracking-tight" data-i18n="privacy-sec8-title">
+                        8. Quyền của đối tác
+                    </h2>
+                    <div class="text-sm md:text-base text-zinc-600 dark:text-zinc-400 space-y-3 leading-relaxed" data-i18n="privacy-sec8-desc">
+                        <p>Bạn có quyền:</p>
+                        <p>Yêu cầu truy cập, chỉnh sửa hoặc xóa bỏ thông tin cá nhân/dữ liệu dự án đã cung cấp cho chúng tôi.</p>
+                        <p>Yêu cầu hủy bỏ các liên lạc (email, tin nhắn) nếu không còn nhu cầu hợp tác.</p>
+                    </div>
+                </section>
+
+                <!-- Section 9 -->
+                <section class="space-y-3">
+                    <h2 class="text-xl md:text-2xl font-bold text-zinc-950 dark:text-white tracking-tight" data-i18n="privacy-sec9-title">
+                        9. Liên hệ
+                    </h2>
+                    <div class="text-sm md:text-base text-zinc-600 dark:text-zinc-400 space-y-2 leading-relaxed" data-i18n="privacy-sec9-desc">
+                        <p>Nếu bạn có bất kỳ câu hỏi nào về cách chúng tôi bảo vệ thông tin hoặc muốn trao đổi sâu hơn về cam kết bảo mật cho dự án sắp tới, vui lòng liên hệ trực tiếp với chúng tôi:</p>
+                        <p><strong>Email:</strong> <a href="mailto:contact@odrixon.com" class="text-blue-600 dark:text-blue-400 hover:underline">contact@odrixon.com</a></p>
+                        <p><strong>Điện thoại:</strong> <a href="tel:+84395473223" class="text-blue-600 dark:text-blue-400 hover:underline">+84 395473223</a></p>
+                        <p><strong>Địa điểm:</strong> TP. Cần Thơ, Việt Nam</p>
+                        <p><strong>Thời gian phản hồi:</strong> Trong vòng 24 - 48 giờ làm việc.</p>
+                    </div>
+                </section>
             </div>
-            <div class="flex items-center gap-3">
-                <!-- Language Toggle -->
-                <button id="lang-toggle"
-                    class="p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-full transition-all flex items-center gap-1.5 group">
-                    <iconify-icon icon="material-symbols:language" class="text-lg"></iconify-icon>
-                    <span class="font-label-sm text-[10px] md:text-xs uppercase" id="lang-text">VN</span>
-                </button>
-                <!-- Theme Toggle -->
-                <button id="theme-toggle"
-                    class="p-1.5 hover:bg-black/5 dark:hover:bg-white/5 rounded-full transition-all">
-                    <iconify-icon id="theme-icon" icon="material-symbols:dark-mode-outline"
-                        class="text-lg"></iconify-icon>
-                </button>
-            </div>
+
+            <!-- Last Updated -->
+            <p class="mt-16 pt-8 border-t border-zinc-200 dark:border-zinc-800 text-xs text-zinc-500 dark:text-zinc-500 leading-relaxed" data-i18n="privacy-update">
+                Cập nhật lần cuối: Tháng 6 năm 2026. Odrixon Studio bảo lưu quyền cập nhật chính sách này để phù hợp với sự phát triển của công nghệ và các quy định pháp luật hiện hành.
+            </p>
         </div>
-    </nav>
+    </main>
 
-    <!-- Main Content Section -->
-    <section class="relative pt-24 pb-20 md:pt-36 md:pb-32 px-6 md:px-gutter max-w-4xl mx-auto">
-        <h1 class="font-headline-xl text-3xl md:text-[48px] mb-4 md:mb-6 leading-tight text-black dark:text-white"
-            data-i18n="privacy-title">
-            Chính sách Bảo mật — Odrixon Studio
-        </h1>
-        <p class="font-body-lg text-base md:text-lg text-on-surface-variant dark:text-white/70 mb-12 leading-relaxed"
-            data-i18n="privacy-intro">
-            Tại Odrixon Studio, chúng tôi hiểu rằng ý tưởng là tài sản quý giá nhất của đối tác. Bảo mật không chỉ là
-            cam kết kỹ thuật, mà là nền tảng niềm tin để chúng ta cùng nhau kiến tạo tương lai.
-        </p>
-
-        <div class="space-y-12">
-            <!-- Section 1 -->
-            <div>
-                <h2 class="font-title-md text-xl md:text-2xl text-black dark:text-white mb-4"
-                    data-i18n="privacy-sec1-title">
-                    1. Nguyên tắc cốt lõi
-                </h2>
-                <div class="font-body-md text-sm md:text-base text-on-surface-variant dark:text-white/60 space-y-3 leading-relaxed"
-                    data-i18n="privacy-sec1-desc">
-                    <p><strong>Tính bảo mật tuyệt đối:</strong> Mọi thông tin, ý tưởng, bản vẽ kỹ thuật hoặc dữ liệu mà
-                        đối tác chia sẻ với chúng tôi đều được coi là "Thông tin mật" và được bảo vệ nghiêm ngặt.</p>
-                    <p><strong>Không chia sẻ dữ liệu:</strong> Chúng tôi cam kết không bán, không cho thuê hoặc chia sẻ
-                        dữ liệu của đối tác cho bất kỳ bên thứ ba nào khi chưa có sự đồng ý bằng văn bản.</p>
-                    <p><strong>Tối giản hóa dữ liệu:</strong> Chúng tôi chỉ thu thập những thông tin cần thiết nhất để
-                        phục vụ quá trình tư vấn và triển khai dự án.</p>
-                </div>
-            </div>
-
-            <!-- Section 2 -->
-            <div>
-                <h2 class="font-title-md text-xl md:text-2xl text-black dark:text-white mb-4"
-                    data-i18n="privacy-sec2-title">
-                    2. Thông tin chúng tôi thu thập
-                </h2>
-                <div class="font-body-md text-sm md:text-base text-on-surface-variant dark:text-white/60 space-y-3 leading-relaxed"
-                    data-i18n="privacy-sec2-desc">
-                    <p>Khi bạn kết nối với Odrixon Studio qua website hoặc các kênh trực tiếp, chúng tôi có thể thu
-                        thập:</p>
-                    <p><strong>Thông tin định danh:</strong> Họ tên, email, số điện thoại để liên lạc.</p>
-                    <p><strong>Thông tin dự án:</strong> Nội dung mô tả ý tưởng, yêu cầu kỹ thuật và mục tiêu kinh doanh
-                        mà bạn chia sẻ trong các buổi tư vấn.</p>
-                </div>
-            </div>
-
-            <!-- Section 3 -->
-            <div>
-                <h2 class="font-title-md text-xl md:text-2xl text-black dark:text-white mb-4"
-                    data-i18n="privacy-sec3-title">
-                    3. Cách chúng tôi bảo vệ tài sản trí tuệ
-                </h2>
-                <div class="font-body-md text-sm md:text-base text-on-surface-variant dark:text-white/60 space-y-3 leading-relaxed"
-                    data-i18n="privacy-sec3-desc">
-                    <p><strong>Kiểm soát truy cập:</strong> Chỉ đội ngũ nòng cốt tham gia trực tiếp vào dự án mới có
-                        quyền truy cập vào dữ liệu của bạn.</p>
-                    <p><strong>Môi trường phát triển an toàn:</strong> Các dự án được lưu trữ trên hệ thống máy chủ có
-                        bảo mật cao, mã hóa dữ liệu đầu cuối và sao lưu thường xuyên.</p>
-                    <p><strong>Cam kết NDA (Thỏa thuận bảo mật):</strong> Đối với các dự án cần tính riêng tư cao, chúng
-                        tôi sẵn sàng ký kết văn bản cam kết bảo mật (Non-Disclosure Agreement) trước khi thảo luận chi
-                        tiết về kỹ thuật.</p>
-                </div>
-            </div>
-
-            <!-- Section 4 -->
-            <div>
-                <h2 class="font-title-md text-xl md:text-2xl text-black dark:text-white mb-4"
-                    data-i18n="privacy-sec4-title">
-                    4. Sử dụng thông tin
-                </h2>
-                <div class="font-body-md text-sm md:text-base text-on-surface-variant dark:text-white/60 space-y-3 leading-relaxed"
-                    data-i18n="privacy-sec4-desc">
-                    <p>Thông tin của bạn được sử dụng cho các mục đích:</p>
-                    <p>Liên lạc, phản hồi và tư vấn giải pháp kỹ thuật cho ý tưởng của bạn.</p>
-                    <p>Cập nhật tiến độ dự án (nếu đã ký kết hợp tác).</p>
-                    <p>Cải thiện trải nghiệm dịch vụ của Odrixon Studio dựa trên phản hồi của bạn.</p>
-                </div>
-            </div>
-
-            <!-- Section 5 -->
-            <div>
-                <h2 class="font-title-md text-xl md:text-2xl text-black dark:text-white mb-4"
-                    data-i18n="privacy-sec5-title">
-                    5. Thời hạn lưu trữ dữ liệu
-                </h2>
-                <div class="font-body-md text-sm md:text-base text-on-surface-variant dark:text-white/60 space-y-3 leading-relaxed"
-                    data-i18n="privacy-sec5-desc">
-                    <p>Chúng tôi chỉ lưu trữ dữ liệu dự án và thông tin cá nhân của bạn trong thời gian cần thiết để
-                        hoàn thành mục đích thu thập (ví dụ: cho đến khi dự án kết thúc hoặc hoàn thành dịch vụ tư vấn
-                        giải pháp) hoặc cho đến khi nhận được yêu cầu xóa bỏ thông tin từ phía đối tác. Điều này giúp
-                        đảm bảo tài sản trí tuệ và thông tin của bạn không bị lưu trữ vô thời hạn.</p>
-                </div>
-            </div>
-
-            <!-- Section 6 -->
-            <div>
-                <h2 class="font-title-md text-xl md:text-2xl text-black dark:text-white mb-4"
-                    data-i18n="privacy-sec6-title">
-                    6. Cookie và dữ liệu tự động
-                </h2>
-                <div class="font-body-md text-sm md:text-base text-on-surface-variant dark:text-white/60 space-y-3 leading-relaxed"
-                    data-i18n="privacy-sec6-desc">
-                    <p>Website này sử dụng cookie để lưu trữ các tùy chọn hiển thị cá nhân của bạn (như ngôn ngữ ưa
-                        thích và cài đặt chế độ sáng/tối). Ngoài ra, chúng tôi có thể sử dụng các công cụ phân tích lưu
-                        lượng ẩn danh (như Google Analytics) để tối ưu cấu trúc website và nâng cao chất lượng dịch vụ.
-                        Bạn có thể chủ động tắt cookie thông qua tùy chọn cài đặt trên trình duyệt của mình.</p>
-                </div>
-            </div>
-
-            <!-- Section 7 -->
-            <div>
-                <h2 class="font-title-md text-xl md:text-2xl text-black dark:text-white mb-4"
-                    data-i18n="privacy-sec7-title">
-                    7. Trường hợp ngoại lệ (Pháp lý)
-                </h2>
-                <div class="font-body-md text-sm md:text-base text-on-surface-variant dark:text-white/60 space-y-3 leading-relaxed"
-                    data-i18n="privacy-sec7-desc">
-                    <p>Chúng kế hoạch bảo mật thông tin mật của đối tác trong mọi khả năng. Tuy nhiên, chúng tôi có thể
-                        buộc phải tiết lộ thông tin khi có yêu cầu bằng văn bản bởi các cơ quan pháp luật có thẩm quyền
-                        theo đúng quy định hiện hành của pháp luật Việt Nam.</p>
-                </div>
-            </div>
-
-            <!-- Section 8 -->
-            <div>
-                <h2 class="font-title-md text-xl md:text-2xl text-black dark:text-white mb-4"
-                    data-i18n="privacy-sec8-title">
-                    8. Quyền của đối tác
-                </h2>
-                <div class="font-body-md text-sm md:text-base text-on-surface-variant dark:text-white/60 space-y-3 leading-relaxed"
-                    data-i18n="privacy-sec8-desc">
-                    <p>Bạn có quyền:</p>
-                    <p>Yêu cầu truy cập, chỉnh sửa hoặc xóa bỏ thông tin cá nhân/dữ liệu dự án đã cung cấp cho chúng
-                        tôi.</p>
-                    <p>Yêu cầu hủy bỏ các liên lạc (email, tin nhắn) nếu không còn nhu cầu hợp tác.</p>
-                </div>
-            </div>
-
-            <!-- Section 9 -->
-            <div>
-                <h2 class="font-title-md text-xl md:text-2xl text-black dark:text-white mb-4"
-                    data-i18n="privacy-sec9-title">
-                    9. Liên hệ
-                </h2>
-                <div class="font-body-md text-sm md:text-base text-on-surface-variant dark:text-white/60 space-y-3 leading-relaxed"
-                    data-i18n="privacy-sec9-desc">
-                    <p>Nếu bạn có bất kỳ câu hỏi nào về cách chúng tôi bảo vệ thông tin hoặc muốn trao đổi sâu hơn về
-                        cam kết bảo mật cho dự án sắp tới, vui lòng liên hệ trực tiếp với chúng tôi:</p>
-                    <p><strong>Email:</strong> <a href="mailto:contact@odrixon.com"
-                            class="text-primary hover:underline">contact@odrixon.com</a></p>
-                    <p><strong>Điện thoại:</strong> <a href="tel:+84395473223" class="text-primary hover:underline">+84
-                            395473223</a></p>
-                    <p><strong>Địa điểm:</strong> TP. Cần Thơ, Việt Nam</p>
-                    <p><strong>Thời gian phản hồi:</strong> Trong vòng 24 - 48 giờ làm việc.</p>
-                </div>
-            </div>
-        </div>
-
-        <p class="mt-16 pt-8 border-t border-black/5 dark:border-white/5 text-xs text-on-surface-variant/80 dark:text-white/40 leading-relaxed"
-            data-i18n="privacy-update">
-            Cập nhật lần cuối: Tháng 6 năm 2026. Odrixon Studio bảo lưu quyền cập nhật chính sách này để phù hợp với sự
-            phát triển của công nghệ và các quy định pháp luật hiện hành.
-        </p>
-    </section>
-
-    <!-- Footer -->
-    <footer
-        class="bg-white dark:bg-black py-24 px-gutter border-t border-black/5 dark:border-white/5 transition-colors">
-        <div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-start gap-16">
-            <div class="max-w-xs">
-                <div class="flex items-center gap-3 mb-8">
-                    <img alt="Logo" class="h-8 w-8 grayscale dark:invert" src="../img/logo.png">
-                    <span class="font-headline-lg text-2xl text-black dark:text-white">Odrixon</span>
-                </div>
-                <p class="font-body-md text-on-surface-variant dark:text-white/60" data-i18n="footer-desc">
-                    Ý tưởng của bạn, tâm huyết của chúng tôi.
-                </p>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-16">
+    <!-- FOOTER -->
+    <footer class="border-t border-zinc-200 dark:border-zinc-800 py-12 md:py-14 bg-white dark:bg-black transition-colors">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 md:gap-8">
                 <div>
-                    <h4 class="font-label-sm text-black dark:text-white mb-8" data-i18n="footer-col1-title">Studio</h4>
-                    <ul class="space-y-4">
-                        <li class=""><a
-                                class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
-                                href="../#vision" data-i18n="nav-vision">Tầm nhìn</a></li>
-                        <li class=""><a
-                                class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
-                                href="#" data-i18n="footer-culture">Văn hóa</a></li>
-                    </ul>
+                    <div class="flex items-center gap-2.5">
+                        <img src="../img/logo.png" alt="Odrixon Logo" class="w-6 h-6 object-contain dark:invert">
+                        <span class="font-bold text-base md:text-lg text-zinc-950 dark:text-white">Odrixon Studio</span>
+                    </div>
+                    <p class="mt-1.5 text-xs md:text-sm text-zinc-500 dark:text-zinc-400" data-i18n="footer-desc">
+                        Ý tưởng của bạn, tâm huyết của chúng tôi.
+                    </p>
                 </div>
-                <div>
-                    <h4 class="font-label-sm text-black dark:text-white mb-8" data-i18n="footer-col2-title">Pháp lý</h4>
-                    <ul class="space-y-4">
-                        <li class=""><a
-                                class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
-                                href="../privacy/" data-i18n="footer-privacy">Bảo mật</a></li>
-                        <li class=""><a
-                                class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
-                                href="../terms/" data-i18n="footer-terms">Điều khoản</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-label-sm text-black dark:text-white mb-8" data-i18n="footer-col3-title">Mạng xã hội
-                    </h4>
-                    <div class="flex gap-6">
-                        <a class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
-                            href="https://www.facebook.com/profile.php?id=61591041418507" target="_blank"
-                            rel="noopener noreferrer" aria-label="Facebook"><iconify-icon icon="ri:facebook-fill"
-                                width="24" height="24"></iconify-icon></a>
-                        <a class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
-                            href="#" aria-label="Github"><iconify-icon icon="ri:github-fill" width="24"
-                                height="24"></iconify-icon></a>
-                        <a class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
-                            href="#" aria-label="Youtube"><iconify-icon icon="ri:youtube-fill" width="24"
-                                height="24"></iconify-icon></a>
-                        <a class="text-on-surface-variant dark:text-white/60 hover:text-black dark:hover:text-white transition-all"
-                            href="#" aria-label="TikTok"><iconify-icon icon="ri:tiktok-fill" width="24"
-                                height="24"></iconify-icon></a>
+
+                <div class="flex flex-wrap items-center gap-6 md:gap-8 text-xs md:text-sm font-medium text-zinc-600 dark:text-zinc-400">
+                    <a href="../privacy/" class="text-blue-600 dark:text-blue-400 font-semibold transition-colors" data-i18n="footer-privacy">Bảo mật</a>
+                    <a href="../terms/" class="hover:text-black dark:hover:text-white transition-colors" data-i18n="footer-terms">Điều khoản</a>
+                    <div class="flex items-center gap-3 text-zinc-500 dark:text-zinc-400">
+                        <a href="https://www.facebook.com/profile.php?id=61591041418507" target="_blank" rel="noopener noreferrer" class="hover:text-black dark:hover:text-white transition-colors" aria-label="Facebook">
+                            <iconify-icon icon="ri:facebook-fill" width="18" height="18"></iconify-icon>
+                        </a>
+                        <a href="https://www.youtube.com/@OdrixonStudio" target="_blank" rel="noopener noreferrer" class="hover:text-black dark:hover:text-white transition-colors" aria-label="Youtube">
+                            <iconify-icon icon="ri:youtube-fill" width="18" height="18"></iconify-icon>
+                        </a>
+                        <a href="https://www.tiktok.com/@odrixon.studio" target="_blank" rel="noopener noreferrer" class="hover:text-black dark:hover:text-white transition-colors" aria-label="TikTok">
+                            <iconify-icon icon="ri:tiktok-fill" width="18" height="18"></iconify-icon>
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div
-            class="max-w-container-max mx-auto mt-24 pt-8 border-t border-black/5 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-            <p class="font-label-sm text-on-surface-variant dark:text-white/60" data-i18n="footer-copyright">© 2026
-                Odrixon Studio. All rights reserved.</p>
+
+            <div class="mt-8 pt-6 border-t border-zinc-100 dark:border-zinc-900 flex flex-col sm:flex-row justify-between items-center text-xs text-zinc-500 dark:text-zinc-500 gap-3">
+                <span data-i18n="footer-copyright">© 2026 Odrixon Studio. All rights reserved.</span>
+            </div>
         </div>
     </footer>
 
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
     <script src="../js/translations.js"></script>
     <script src="../js/main.js"></script>
 </body>
